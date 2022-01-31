@@ -1,0 +1,26 @@
+<div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-centre d-flex" style="margin-top: 10px;">
+        <strong style="font-size: 32px; margin-top: 10px;">Pustak</strong>
+        <div class="form-group" style="margin-right: 600px;">
+           <input type="text" class="form-control" placeholder="Search Books">
+        </div>
+        <i class="fas search-icon fa-search"></i>
+        <!-- <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <h2>Home</h2>
+            </a>
+            <a href="" class="navbar-brand">
+                <h2>Books</h2>
+            </a>
+        </div> -->
+    </div>
+    <button routerLink="cart" class="cart-button btn-primary">
+        <i class="fas fa-shopping-cart"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">0</div>
+    </button>
+</div>
+<div class="container">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link *ngFor="let tab of tabs" routerLink="{{tab.route}}" routerLinkActive="{{tab.active}}">{{tab.label}}</a>
+    </nav>
+</div>

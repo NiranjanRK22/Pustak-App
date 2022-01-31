@@ -1,0 +1,24 @@
+.details-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    margin-left: 300px;
+    margin-top: 70px;
+    width: 50%;
+}
+
+.main-card { 
+    display: flex;
+    
+    justify-content: space-between;
+}
+.sub-card {
+   align-self: center;
+}
+
+img {
+    width: 250px;
+    height: 300px;
+}

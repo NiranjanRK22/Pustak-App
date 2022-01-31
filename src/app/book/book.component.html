@@ -1,0 +1,9 @@
+<div *ngIf="books" style="display: flex; justify-content: space-evenly; flex-wrap: wrap; padding: 20px;">
+    <mat-card *ngFor="let book of books" class="card-book">
+        <img  mat-card-md-image src="{{book.bookImg}}">
+        <mat-card-title style="margin-top:10px;">{{book.title}}</mat-card-title>
+        <mat-card-actions>
+         <button mat-raised-button color="primary" (click)="onView(book)">View More</button>
+        </mat-card-actions>
+    </mat-card>
+ </div>
